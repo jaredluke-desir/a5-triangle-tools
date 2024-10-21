@@ -1,0 +1,19 @@
+let
+ func add(n: Integer, o: Integer): Integer ~
+  n + o;
+
+  func product(n: Integer, o: Integer): Integer ~
+  if o = 0
+  then 0
+  else n + product(n, o - 1);
+
+ var i: Integer;
+ var j: Integer
+
+in
+ begin
+ getint (var i);
+ getint (var j);
+ putint (add(i, j)); put(' ');
+ putint (product(i, j));
+ end

@@ -22,19 +22,19 @@ public class TestScanner {
 
 	@Test
 	public void testHiNewComment() {
-		compileExpectFailure("/hi-newcomment.tri");
+		compileExpectSuccess("/hi-newcomment.tri");
 	}
 	
 
 	@Test
 	public void testHiNewComment2() {
-		compileExpectFailure("/hi-newcomment2.tri");
+		compileExpectSuccess("/hi-newcomment2.tri");
 	}
 	
 
 	@Test
 	public void testBarDemo() {
-		compileExpectFailure("/bardemo.tri");
+		compileExpectSuccess("/bardemo.tri");
 	}
 	
 
@@ -42,8 +42,7 @@ public class TestScanner {
 	public void testRepeatUntil() {
 		compileExpectFailure("/repeatuntil.tri");
 	}
-	
-	
+
 	
 	private void compileExpectSuccess(String filename) {
 		// build.gradle has a line sourceSets.test.resources.srcDir file("$rootDir/programs")
